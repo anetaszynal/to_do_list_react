@@ -1,11 +1,14 @@
 import React from 'react';
+import './style.css';
 
 export const Section = ({ title, body, additionalContent }) => (
-  <section>
-    <header>
-      <h2>{title}</h2>
+  <section className="section">
+    <header className="section__header">
+      <h2 className="section__title">{title}</h2>
       {additionalContent}
     </header>
-    {body}
+    <div className="section__body">
+      {body}
+    </div>
   </section>
 );
