@@ -4,6 +4,7 @@ import { Header } from './modules/Header';
 import { Section } from './modules/Section';
 import { Form } from './modules/Form';
 import { Tasks } from './modules/Tasks';
+import { Buttons } from './modules/Buttons';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       />
       <Section
         title="Lista zadań"
+        additionalContent={<Buttons />}
         body={<Tasks />}
       />
     </Container>

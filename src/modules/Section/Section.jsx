@@ -1,8 +1,11 @@
 import React from 'react';
 
-export const Section = ({title, body}) => (
+export const Section = ({ title, body, additionalContent }) => (
   <section>
-    <h2>{title}</h2>
+    <header>
+      <h2>{title}</h2>
+      {additionalContent}
+    </header>
     {body}
   </section>
 );
