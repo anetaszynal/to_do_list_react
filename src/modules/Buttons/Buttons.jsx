@@ -1,8 +1,9 @@
 import React from 'react';
+import './style.css';
 
-export const Button = () => (
-  <div>
-    <button>Pokaż ukończone</button>
-    <button>Ukończ wszystkie</button>
+export const Buttons = () => (
+  <div className="buttons">
+    <button className="buttons__button">Pokaż ukończone</button>
+    <button className="buttons__button">Ukończ wszystkie</button>
   </div>
 );
