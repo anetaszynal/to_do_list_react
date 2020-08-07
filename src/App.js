@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Container } from './components/Container';
 import { Header } from './components/Header';
 import { Section } from './components/Section';
@@ -7,8 +7,12 @@ import { Tasks } from './components/Tasks';
 import { Buttons } from './components/Buttons';
 
 function App() {
-  const [tasks, setTasks] = useState([]);
+  const [tasks, setTasks] = useState(JSON.parse(localStorage.getItem("tasks")) || []);
   const [hideDone, setHideDone] = useState(false);
+
+  useEffect(() => {
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+  }, [tasks]);
 
   const addNewTask = (content) => {
     setTasks(tasks => [
