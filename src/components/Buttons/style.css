@@ -16,6 +16,11 @@
   }
 }
 
-.buttons__button:disabled{
+.buttons__button:disabled {
   color: gray;
+}
+
+.buttons__button:hover {
+  transition: 1s;
+  color: rgba(0, 128, 128, 0.712);
 }

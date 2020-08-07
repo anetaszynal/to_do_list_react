@@ -21,8 +21,17 @@
   color: white;
 }
 
+.tasksList__button:hover {
+  transition: 1s;
+  background-color: rgba(0, 128, 0, 0.712);
+}
+
 .tasksList__button--deleteTask {
   background-color: red;
+}
+
+.tasksList__button--deleteTask:hover {
+  background-color: rgba(255, 0, 0, 0.712);
 }
 
 .tasksList__content--done {

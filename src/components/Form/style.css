@@ -21,3 +21,9 @@
   background-color: teal;
   color: white;
 }
+
+.form__button:hover {
+  transition: background-color 1s, transform 2s;
+  background-color: rgba(0, 128, 128, 0.712);
+  transform: scale(1.2);
+}
