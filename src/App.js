@@ -32,6 +32,10 @@ function App() {
     }));
   };
 
+  const deleteTask = (id) => {
+    setTasks(tasks => tasks.filter(task => task.id !== id));
+  };
+
 
   return (
     <Container>
@@ -50,7 +54,8 @@ function App() {
         body={
           <Tasks
             tasks={tasks}
-            toggleTaskDone={id => toggleTaskDone(id)}
+            toggleTaskDone={toggleTaskDone}
+            deleteTask={deleteTask}
           />
         }
       />
