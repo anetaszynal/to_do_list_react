@@ -36,6 +36,9 @@ function App() {
     setTasks(tasks => tasks.filter(task => task.id !== id));
   };
 
+  const completeAll = () => {
+    setTasks(tasks => tasks.map(task => ({ ...task, done: true })))
+  }
 
   return (
     <Container>
@@ -50,7 +53,12 @@ function App() {
       />
       <Section
         title="Lista zadań"
-        additionalContent={<Buttons />}
+        additionalContent={
+          <Buttons
+            tasks={tasks}
+            completeAll={completeAll}
+          />
+        }
         body={
           <Tasks
             tasks={tasks}
