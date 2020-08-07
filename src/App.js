@@ -7,10 +7,7 @@ import { Tasks } from './components/Tasks';
 import { Buttons } from './components/Buttons';
 
 function App() {
-  const [tasks, setTasks] = useState([
-    { id: 1, content: "przepisać to do List", done: false },
-    { id: 2, content: "przepisać currecy office", done: true }
-  ]);
+  const [tasks, setTasks] = useState([]);
   const [hideDone, setHideDone] = useState(false);
 
   const addNewTask = (content) => {
