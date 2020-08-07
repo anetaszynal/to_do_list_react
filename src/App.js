@@ -23,6 +23,16 @@ function App() {
     ]);
   };
 
+  const toggleTaskDone = (id) => {
+    setTasks(tasks => tasks.map(task => {
+      if (task.id === id) {
+        return { ...task, done: !task.done };
+      }
+      return task;
+    }));
+  };
+
+
   return (
     <Container>
       <Header title="Lista zadań" />
@@ -40,6 +50,7 @@ function App() {
         body={
           <Tasks
             tasks={tasks}
+            toggleTaskDone={id => toggleTaskDone(id)}
           />
         }
       />

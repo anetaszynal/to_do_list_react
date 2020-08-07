@@ -24,3 +24,7 @@
 .tasksList__button--deleteTask {
   background-color: red;
 }
+
+.tasksList__content--done {
+  text-decoration: line-through;
+}
