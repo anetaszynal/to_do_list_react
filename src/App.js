@@ -11,6 +11,7 @@ function App() {
     { id: 1, content: "przepisać to do List", done: false },
     { id: 2, content: "przepisać currecy office", done: true }
   ]);
+  const [hideDone, setHideDone] = useState(false);
 
   const addNewTask = (content) => {
     setTasks(tasks => [
@@ -38,7 +39,11 @@ function App() {
 
   const completeAll = () => {
     setTasks(tasks => tasks.map(task => ({ ...task, done: true })))
-  }
+  };
+
+  const toggleHideDone = () => {
+    setHideDone(hideDone => !hideDone);
+  };
 
   return (
     <Container>
@@ -57,11 +62,14 @@ function App() {
           <Buttons
             tasks={tasks}
             completeAll={completeAll}
+            hideDone={hideDone}
+            toggleHideDone={toggleHideDone}
           />
         }
         body={
           <Tasks
             tasks={tasks}
+            hideDone={hideDone}
             toggleTaskDone={toggleTaskDone}
             deleteTask={deleteTask}
           />

@@ -1,10 +1,13 @@
 import React from 'react';
 import './style.css';
 
-export const Tasks = ({ tasks, toggleTaskDone, deleteTask }) => (
+export const Tasks = ({ tasks, toggleTaskDone, deleteTask, hideDone }) => (
   < ul className="tasksList" >
     {tasks.map(({ id, done, content }) => (
-      <li key={id} className="tasksList__item">
+      <li
+        key={id}
+        className={`tasksList__item ${done && hideDone ? "tasksList__item--hidden" : ""}`}
+      >
         <button onClick={() => toggleTaskDone(id)} className="tasksList__button">
           {done ? "✔" : ""}
         </button>
