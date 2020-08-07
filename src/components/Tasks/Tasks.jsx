@@ -13,7 +13,7 @@ export const Tasks = ({ tasks, toggleTaskDone, deleteTask, hideDone }) => (
         </button>
         <span
           className={done ? "tasksList__content--done" : ""}>
-          {id} - {content}
+          {content}
         </span>
         <button
           onClick={() => deleteTask(id)}
