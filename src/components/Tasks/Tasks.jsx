@@ -2,7 +2,7 @@ import React from 'react';
 import './style.css';
 
 export const Tasks = ({ tasks, toggleTaskDone, deleteTask, hideDone }) => (
-  < ul className="tasksList" >
+  <ul className="tasksList">
     {tasks.map(({ id, done, content }) => (
       <li
         key={id}
