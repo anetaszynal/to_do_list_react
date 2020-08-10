@@ -1,8 +1,8 @@
 import React from 'react';
-import './style.css';
+import { Content } from './styled';
 
 export const Container = ({ children }) => (
-  <main className="container">
+  <Content>
     {children}
-  </main>
+  </Content>
 );
