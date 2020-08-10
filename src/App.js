@@ -6,9 +6,17 @@ import { Form } from './components/Form';
 import { Tasks } from './components/Tasks';
 import { Buttons } from './components/Buttons';
 
+const getInitialTasks = () => {
+  const tasksFromLocalStorage = localStorage.getItem("tasks");
+
+  return tasksFromLocalStorage
+    ? JSON.parse(tasksFromLocalStorage)
+    : []
+}
+
 function App() {
-  const [tasks, setTasks] = useState(JSON.parse(localStorage.getItem("tasks")) || []);
   const [hideDone, setHideDone] = useState(false);
+  const [tasks, setTasks] = useState(getInitialTasks);
 
   useEffect(() => {
     localStorage.setItem("tasks", JSON.stringify(tasks));
