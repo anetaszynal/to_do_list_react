@@ -17,10 +17,10 @@ export const SectionHeader = styled.header`
    }
 `;
 
-export const SectionTitle = styled.h2 `
+export const SectionTitle = styled.h2`
   margin: 0;
 `;
 
-export const SectionBody = styled.div `
+export const SectionBody = styled.div`
   padding: 15px;
 `;
