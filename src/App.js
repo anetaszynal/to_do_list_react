@@ -1,17 +1,17 @@
-import React, { useState } from 'react';
-import { Container } from './components/Container';
-import { Header } from './components/Header';
-import { Section } from './components/Section';
-import { Form } from './components/Form';
-import { Tasks } from './components/Tasks';
-import { Buttons } from './components/Buttons';
-import { useTasks } from './useTasks';
+import React, { useState } from "react";
+import { Container } from "./common/Container";
+import { Header } from "./common/Header";
+import { Section } from "./common/Section";
+import { Form } from "./features/Tasks/Form";
+import { Tasks } from "./features/Tasks/TasksList";
+import { Buttons } from "./features/Tasks/Buttons";
+import { useTasks } from "./useTasks";
 
 function App() {
   const [hideDone, setHideDone] = useState(false);
 
   const toggleHideDone = () => {
-    setHideDone(hideDone => !hideDone);
+    setHideDone((hideDone) => !hideDone);
   };
 
   const {
@@ -27,11 +27,7 @@ function App() {
       <Header title="Lista zadań" />
       <Section
         title="Dodaj nowe zadanie"
-        body={
-          <Form
-            addNewTask={addNewTask}
-          />
-        }
+        body={<Form addNewTask={addNewTask} />}
       />
       <Section
         title="Lista zadań"
@@ -53,8 +49,7 @@ function App() {
         }
       />
     </Container>
-
   );
-};
+}
 
 export default App;
