@@ -2,7 +2,7 @@
 
 My simple to do list lets you add, toggle done and remove tasks.
 
-## Where can I find this converter?
+## Where can I find this to do list?
 
 Below I attached link to this website:
 
