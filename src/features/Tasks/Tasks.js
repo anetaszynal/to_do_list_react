@@ -2,9 +2,9 @@ import React from "react";
 import { Container } from "../../common/Container";
 import { Header } from "../../common/Header";
 import { Section } from "../../common/Section";
-import { Form } from "../../features/Tasks/Form";
-import { TasksList } from "../../features/Tasks/TasksList";
-import { Buttons } from "../../features/Tasks/Buttons";
+import { Form } from "../../features/tasks/Form";
+import { TasksList } from "../../features/tasks/TasksList";
+import { Buttons } from "../../features/tasks/Buttons";
 
 export const Tasks = () => {
   return (
