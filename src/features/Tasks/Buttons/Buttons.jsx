@@ -6,10 +6,12 @@ import {
   toggleHideDone,
   completeAll,
   fetchExampleTasks,
+  selectHideDone,
 } from "../tasksSlice";
 
 export const Buttons = () => {
-  const { tasks, hideDone } = useSelector(selectTasks);
+  const tasks = useSelector(selectTasks);
+  const hideDone = useSelector(selectHideDone);
   const dispatch = useDispatch();
 
   return (
