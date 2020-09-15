@@ -1,28 +1,21 @@
 import React from "react";
-import { ButtonsContener, Button } from "./styled";
+import { ButtonsContener } from "./styled";
+import { Button } from "../../Button";
 import { useSelector, useDispatch } from "react-redux";
 import {
   selectTasks,
   toggleHideDone,
   completeAll,
-  fetchExampleTasks,
   selectHideDone,
-} from "../tasksSlice";
+} from "../../tasksSlice";
 
-export const Buttons = () => {
+export const TasksButtons = () => {
   const tasks = useSelector(selectTasks);
   const hideDone = useSelector(selectHideDone);
   const dispatch = useDispatch();
 
   return (
     <ButtonsContener>
-      <Button
-        onClick={() => {
-          dispatch(fetchExampleTasks());
-        }}
-      >
-        Pobierz przykładowe zadania
-      </Button>
       {tasks.length > 0 && (
         <>
           <Button

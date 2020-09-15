@@ -1,10 +1,5 @@
 import styled from "styled-components";
 
-export const ButtonsContener = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-`;
-
 export const Button = styled.button`
   margin: 15px 15px 15px 0px;
   background: transparent;
