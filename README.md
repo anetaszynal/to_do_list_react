@@ -16,6 +16,8 @@ You will find there:
 - list with tasks to be performed
 - button to mark completed tasks
 - button to delete tasks
+- buton to download exampl tasks
+- search engine
 
 **Technologies, libraries and methodologies used:**
 
@@ -32,3 +34,6 @@ You will find there:
 2. Press enter or the "add task" button
 3. After completing the task, press the green button
 4. If you want to delete the added task, use the red button with the trash can
+5. You can filter your tasks by writing part of task in the search engine
+6. You can also download example tasks and see how to use to do list
+7. Have fun! 😉
