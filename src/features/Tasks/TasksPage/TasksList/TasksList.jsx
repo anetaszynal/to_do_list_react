@@ -1,44 +1,43 @@
 import React from "react";
 import {
-  List,
-  ListItem,
-  StyledNavLink,
-  ListButton,
-  ListContent,
+    List,
+    ListItem,
+    StyledNavLink,
+    ListButton,
+    ListContent,
 } from "./styled";
-import { useSelector, useDispatch } from "react-redux";
+import {useSelector, useDispatch} from "react-redux";
 import {
-  toggleTaskDone,
-  deleteTask,
-  selectHideDone,
-  selectTasksByQuery,
+    toggleTaskDone,
+    deleteTask,
+    selectHideDone,
+    selectTasksByQuery,
 } from "../../tasksSlice";
-import { useLocation } from "react-router-dom";
 import searchQueryParamName from "../searchQueryParamName";
+import {useQueryParameter} from "../queryParameters";
 
 export const TasksList = () => {
-  const location = useLocation();
-  const query = new URLSearchParams(location.search).get(searchQueryParamName);
+    const query = useQueryParameter(searchQueryParamName);
+    const tasks = useSelector((state) => selectTasksByQuery(state, query));
+    const hideDone = useSelector(selectHideDone);
 
-  const tasks = useSelector((state) => selectTasksByQuery(state, query));
-  const hideDone = useSelector(selectHideDone);
-  const dispatch = useDispatch();
+    const dispatch = useDispatch();
 
-  return (
-    <List>
-      {tasks.map(({ id, done, content }) => (
-        <ListItem key={id} hidden={done && hideDone}>
-          <ListButton onClick={() => dispatch(toggleTaskDone(id))}>
-            {done ? "✔" : ""}
-          </ListButton>
-          <ListContent done={done}>
-            <StyledNavLink to={`/zadania/${id}`}>{content}</StyledNavLink>
-          </ListContent>
-          <ListButton onClick={() => dispatch(deleteTask(id))} deleteTask>
-            🗑
-          </ListButton>
-        </ListItem>
-      ))}
-    </List>
-  );
+    return (
+        <List>
+            {tasks.map(({id, done, content}) => (
+                <ListItem key={id} hidden={done && hideDone}>
+                    <ListButton onClick={() => dispatch(toggleTaskDone(id))}>
+                        {done ? "✔" : ""}
+                    </ListButton>
+                    <ListContent done={done}>
+                        <StyledNavLink to={`/zadania/${id}`}>{content}</StyledNavLink>
+                    </ListContent>
+                    <ListButton onClick={() => dispatch(deleteTask(id))} deleteTask>
+                        🗑
+                    </ListButton>
+                </ListItem>
+            ))}
+        </List>
+    );
 };

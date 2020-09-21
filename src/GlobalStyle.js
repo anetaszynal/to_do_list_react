@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import {createGlobalStyle} from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
 html {
@@ -11,6 +11,6 @@ html {
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: ${({ theme }) => theme.color.brightGray};
+  background-color: ${({theme}) => theme.color.brightGray};
 }
 `;
