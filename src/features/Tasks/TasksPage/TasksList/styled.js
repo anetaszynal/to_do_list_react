@@ -1,9 +1,9 @@
-import styled, { css } from "styled-components";
-import { NavLink } from "react-router-dom";
+import styled, {css} from "styled-components";
+import {NavLink} from "react-router-dom";
 
 export const StyledNavLink = styled(NavLink)`
   text-decoration: none;
-  color: ${({ theme }) => theme.color.teal};
+  color: ${({theme}) => theme.color.teal};
 
   &:hover {
     transition: 1s;
@@ -19,13 +19,13 @@ export const List = styled.ul`
 
 export const ListItem = styled.li`
   padding: 15px;
-  border-bottom: 2px solid ${({ theme }) => theme.color.brightGray};
+  border-bottom: 2px solid ${({theme}) => theme.color.brightGray};
   display: grid;
   grid-template-columns: auto 1fr auto;
   grid-gap: 15px;
   align-items: center;
 
-  ${({ hidden }) =>
+  ${({hidden}) =>
     hidden &&
     css`
       display: none;
@@ -35,28 +35,28 @@ export const ListItem = styled.li`
 export const ListButton = styled.button`
   width: 30px;
   height: 30px;
-  background-color: ${({ theme }) => theme.color.greenLeaf};
+  background-color: ${({theme}) => theme.color.greenLeaf};
   border: none;
-  color: ${({ theme }) => theme.color.white};
+  color: ${({theme}) => theme.color.white};
 
   &:hover {
     transition: 1s;
     filter: brightness(130%);
   }
 
-  ${({ deleteTask }) =>
+  ${({deleteTask}) =>
     deleteTask &&
     css`
-      background-color: ${({ theme }) => theme.color.red};
+      background-color: ${({theme}) => theme.color.red};
 
       &:hover {
-        background-color: ${({ theme }) => theme.color.brightRed};
+        background-color: ${({theme}) => theme.color.brightRed};
       }
     `}
 `;
 
 export const ListContent = styled.span`
-  ${({ done }) =>
+  ${({done}) =>
     done &&
     css`
       text-decoration: line-through;
