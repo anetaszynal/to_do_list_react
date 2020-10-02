@@ -37,3 +37,7 @@ You will find there:
 5. You can filter your tasks by writing part of task in the search engine
 6. You can also download example tasks and see how to use to do list
 7. Have fun! 😉
+
+## Now, see how to use
+
+![To do List app Demo](instruction.gif)
