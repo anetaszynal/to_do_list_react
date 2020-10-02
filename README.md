@@ -16,7 +16,7 @@ You will find there:
 - list with tasks to be performed
 - button to mark completed tasks
 - button to delete tasks
-- buton to download exampl tasks
+- button to download example tasks
 - search engine
 
 **Technologies, libraries and methodologies used:**
@@ -26,7 +26,14 @@ You will find there:
 - Styled components
 - JavaScript
 - React.js
+- React Router
+- Hooks (also custom hooks)
+- JSX
 - Redux
+- Redux Saga
+- Redux Toolkit
+- localStorage
+- API
 
 ## How to use?
 

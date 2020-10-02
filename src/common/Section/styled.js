@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const SectionContent = styled.section`
   margin: 10px 0px;
-  background-color: ${({ theme }) => theme.color.white};
+  background-color: ${({theme}) => theme.color.white};
 `;
 
 export const SectionHeader = styled.header`
@@ -12,7 +12,7 @@ export const SectionHeader = styled.header`
   grid-template-columns: 1fr auto;
   align-items: center;
 
-  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+  @media (max-width: ${({theme}) => theme.breakpoint.mobileMax}px) {
     grid-template-columns: 1fr;
   }
 `;

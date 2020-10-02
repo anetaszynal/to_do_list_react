@@ -4,9 +4,9 @@ export const Button = styled.button`
   margin: 15px 15px 15px 0px;
   background: transparent;
   border: none;
-  color: ${({ theme }) => theme.color.teal};
+  color: ${({theme}) => theme.color.teal};
 
-  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+  @media (max-width: ${({theme}) => theme.breakpoint.mobileMax}px) {
     width: 100%;
   }
 
@@ -16,7 +16,7 @@ export const Button = styled.button`
   }
 
   &:disabled {
-    color: ${({ theme }) => theme.color.gray};
+    color: ${({theme}) => theme.color.gray};
 
     &:hover {
       filter: brightness(100%);
