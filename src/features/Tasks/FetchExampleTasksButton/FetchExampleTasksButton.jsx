@@ -14,7 +14,7 @@ export const FetchExampleTasksButton = () => {
             }}
             disabled={exampleTaskLoading}
         >
-            {exampleTaskLoading ? "Ładowanie..." : "Pobierz przykładowe zadania"}
+            {exampleTaskLoading ? "Loading..." : "Download sample tasks"}
         </Button>
     );
 };

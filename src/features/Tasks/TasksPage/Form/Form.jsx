@@ -36,11 +36,11 @@ export const Form = () => {
         <FormContainer onSubmit={onFormSubmit}>
             <FormInput
                 ref={inputRef}
-                placeholder="Co jest do zrobienia?"
+                placeholder="What are you up to?"
                 value={newTaskContent}
                 onChange={({target}) => setNewTaskContent(target.value)}
             />
-            <FormButton>Dodaj zadanie</FormButton>
+            <FormButton>Add a task</FormButton>
         </FormContainer>
     );
 };

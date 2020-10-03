@@ -20,7 +20,7 @@ export const Search = () => {
     return (
         <Wrapper>
             <FormInput
-                placeholder="Filtruj zadania"
+                placeholder="Filter tasks"
                 value={query || ""}
                 onChange={onInputChange}
             />

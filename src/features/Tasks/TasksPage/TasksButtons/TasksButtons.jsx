@@ -23,7 +23,7 @@ export const TasksButtons = () => {
                             dispatch(toggleHideDone());
                         }}
                     >
-                        {hideDone ? "Pokaż" : "Ukryj"} ukończone
+                        {hideDone ? "Show" : "Hide"} completed
                     </Button>
                     <Button
                         onClick={() => {
@@ -31,7 +31,7 @@ export const TasksButtons = () => {
                         }}
                         disabled={tasks.every(({done}) => done)}
                     >
-                        Ukończ wszystkie
+                        Complete all of them
                     </Button>
                 </>
             )}

@@ -22,7 +22,7 @@ function* fetchExampleTasksHandler() {
         yield put(fetchExampleTasksSuccess(exampleTasks));
     } catch (error) {
         yield put(fetchExampleTasksError());
-        yield  call(alert, "Nie udało się pobrać przykładowych zadań. Spróbuj później.")
+        yield  call(alert, "Failed to download sample tasks. Please try again later.")
     }
 }
 

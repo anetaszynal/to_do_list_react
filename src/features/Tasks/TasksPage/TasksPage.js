@@ -11,15 +11,15 @@ import {FetchExampleTasksButton} from "../FetchExampleTasksButton/FetchExampleTa
 export const TasksPage = () => {
     return (
         <Container>
-            <Header title="Lista zadań"/>
+            <Header title="To-do list"/>
             <Section
-                title="Dodaj nowe zadanie"
+                title="Add a new task"
                 additionalContent={<FetchExampleTasksButton/>}
                 body={<Form/>}
             />
-            <Section title="Wyszukiwarka" body={<Search/>}/>
+            <Section title="Search tasks" body={<Search/>}/>
             <Section
-                title="Lista zadań"
+                title="To-do list"
                 additionalContent={<TasksButtons/>}
                 body={<TasksList/>}
             />

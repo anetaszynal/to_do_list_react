@@ -11,10 +11,10 @@ export const App = () => (
         <nav>
             <List>
                 <li>
-                    <StyledNavLink to={toTasks()}>Zadania</StyledNavLink>
+                    <StyledNavLink to={toTasks()}>Tasks</StyledNavLink>
                 </li>
                 <li>
-                    <StyledNavLink to={toAuthor()}>O autorze</StyledNavLink>
+                    <StyledNavLink to={toAuthor()}>About the author</StyledNavLink>
                 </li>
             </List>
         </nav>

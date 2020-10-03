@@ -31,7 +31,7 @@ export const TasksList = () => {
                         {done ? "✔" : ""}
                     </ListButton>
                     <ListContent done={done}>
-                        <StyledNavLink to={`/zadania/${id}`}>{content}</StyledNavLink>
+                        <StyledNavLink to={`/tasks/${id}`}>{content}</StyledNavLink>
                     </ListContent>
                     <ListButton onClick={() => dispatch(deleteTask(id))} deleteTask>
                         🗑

@@ -8,6 +8,10 @@ Below I attached link to this website:
 
 [to do list](https://anetaszynal.github.io/to_do_list_react/)
 
+## Now, see how to use
+
+![To do List app Demo](instruction.gif)
+
 ## Description
 
 You will find there:
@@ -17,7 +21,7 @@ You will find there:
 - button to mark completed tasks
 - button to delete tasks
 - button to download example tasks
-- search engine
+- search tasks
 
 **Technologies, libraries and methodologies used:**
 
@@ -41,10 +45,6 @@ You will find there:
 2. Press enter or the "add task" button
 3. After completing the task, press the green button
 4. If you want to delete the added task, use the red button with the trash can
-5. You can filter your tasks by writing part of task in the search engine
+5. You can filter your tasks by writing part of task in the search section
 6. You can also download example tasks and see how to use to do list
 7. Have fun! 😉
-
-## Now, see how to use
-
-![To do List app Demo](instruction.gif)

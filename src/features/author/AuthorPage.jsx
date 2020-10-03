@@ -6,17 +6,17 @@ import {Section} from "../../common/Section";
 export const AuthorPage = () => {
     return (
         <Container>
-            <Header title="O autorze"/>
+            <Header title="About the author"/>
             <Section
                 title="Aneta Szynal"
                 body={
                     <>
                         <p>
-                            Uśmiechnięta, komunikatywna oraz pełna szacunku dla innych. <br/>
-                            Od 2019 roku śmiało krocząca ku programowaniu. Niewielkie
-                            doświadczenie nadrabiam{" "}
-                            <b>wielkim zaangażowaniem i chęcią nauki.</b> W wolnym czasie
-                            uwielbiam czytać książki oraz rozwiązywać łamigłówki.
+                            Smiling, communicative and full of respect for others. <br/>
+                            Since 2019, she has been boldly moving towards programming. I'm making up a little
+                            experience{" "}
+                            <b>with great commitment and willingness to learn.</b> In free time
+                            I love reading books and solving puzzles.
                         </p>
                     </>
                 }
