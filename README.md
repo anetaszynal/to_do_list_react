@@ -1,6 +1,6 @@
 # Simple to do list
 
-My simple to do list lets you add, toggle done and remove tasks.
+My to do list lets you add, toggle done and remove tasks. I created this webside during the course by YOUCODE.
 
 ## Where can I find this to do list?
 
