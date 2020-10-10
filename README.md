@@ -1,4 +1,4 @@
-# Simple to do list
+# To do list
 
 My to do list lets you add, toggle done and remove tasks. I created this webside during the course by YOUCODE.
 
